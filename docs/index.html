@@ -19,11 +19,11 @@
 
     <h1 class="page-title">Home</h1>
 
-    
 
 
 
-    
+
+
 
 
     <h3> </h3>
@@ -37,7 +37,7 @@
 
 
 
-    
+
 
 
 
@@ -121,21 +121,7 @@ function are:</p>
 <li><code>action</code>: the action value used by the captcha.</li>
 <li><code>enterprise</code>: optional (Boolean) switch for ReCaptcha Enterprise, default is <code>false</code></li>
 </ul>
-<h4>hCaptcha</h4><pre class="prettyprint source lang-javascript"><code>client.decodeHCaptcha({
-  sitekey: 'the_key_extracted_from_the_page',
-  pageurl: 'https://www.site.with.hcaptcha/example',
-}).then(function(response) {
-  console.log(response.text);
-});
 
->P0_eyJ0eXAiIoJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwYXNza2V5IjoiczHiam4vKzZnb...</code></pre><p><code>decodeHCaptcha</code> is an async function. The parameters for <code>decodeHCaptcha</code>
-function are:</p>
-<ul>
-<li><code>sitekey</code>: The site key for the hCaptcha.</li>
-<li><code>pageurl</code>: The URL where the hCaptcha is.</li>
-<li><code>invisible</code>: optional (Boolean) switch for invisible ReCaptcha, default
-is <code>false</code>.</li>
-</ul>
 <h3>3. Retrieve a previously solved captcha</h3><pre class="prettyprint source lang-javascript"><code>// 61086191138 is the ID of a previously sent Captcha
 client.captcha('61086191138').then(function(response){
   console.log(response);
